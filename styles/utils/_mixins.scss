@@ -1,0 +1,25 @@
+@mixin shadows($shadow-percentage) {
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.13), 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+@mixin card-base() {
+  @include shadows(map-get($shadow-percentage, medium));
+  border-radius: 20px;
+  background-color: white;
+
+  margin: 17px 0;
+}
+
+@mixin display() {
+  padding: 53px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  > * {
+    max-width: $max-width;
+    width: 100%;
+  }
+}

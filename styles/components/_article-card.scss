@@ -1,0 +1,48 @@
+article {
+  @include card-base;
+  overflow: hidden;
+
+  a {
+    //Container
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+
+    img {
+      object-fit: cover;
+      height: 170px;
+    }
+
+    .card-bottom {
+      display: flex;
+      align-items: center;
+
+      .card-text {
+        margin: 15px 11px 9px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        h3 {
+          margin-bottom: 12px;
+          margin-top: 0;
+        }
+
+        p {
+          margin-bottom: 8px;
+          margin-top: 0px;
+          flex-grow: 3;
+        }
+      }
+    }
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  label {
+    i {
+      color: map-get($grey-levels, medium-dark);
+    }
+  }
+}

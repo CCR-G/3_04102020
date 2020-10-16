@@ -1,0 +1,29 @@
+.location {
+  height: 50px;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: map-get($grey-levels, dark);
+  background-color: map-get($grey-levels, medium-light);
+
+  span {
+    margin-right: 10px;
+  }
+}
+
+.cover {
+  background-color: map-get($grey-levels, light);
+  text-align: center;
+
+  p {
+    padding-bottom: 0.6em;
+    font-weight: 300;
+  }
+}
+
+section.section--highlighted {
+  background-color: map-get($grey-levels, light);
+}

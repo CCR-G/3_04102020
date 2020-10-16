@@ -1,0 +1,3 @@
+@function shadow-percentage($percentage) {
+  @return darken(white, $percentage);
+}

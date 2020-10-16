@@ -1,0 +1,27 @@
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+
+$omf-gradient: linear-gradient(
+  353deg,
+  rgba(147, 86, 220, 1) 0%,
+  rgba(255, 121, 218, 1) 100%
+);
+
+$grey-levels: (
+  light: #f6f6f6,
+  medium-light: #eaeaea,
+  medium-dark: #7e7e7e,
+  dark: #353535,
+);
+
+$color-label: #99e2d0;
+$color-label-text: darken($color-label, 40%);
+
+$shadow-percentage: (
+  light: 4%,
+  medium: 7%,
+  dark: 9%,
+);
+
+$max-width: 740px;

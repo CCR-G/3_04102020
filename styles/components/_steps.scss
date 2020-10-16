@@ -1,0 +1,54 @@
+section.steps {
+  ol {
+    padding: 0 0 0 12px;
+    margin: 0;
+    counter-reset: steps;
+
+    li {
+      @include card-base;
+      background-color: map-get($grey-levels, light);
+      padding: 27px 33px;
+      counter-increment: steps;
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      &:before {
+        content: counter(steps);
+        position: absolute;
+        --size: 24px;
+        left: -12px;
+        line-height: var(--size);
+        width: var(--size);
+
+        background: $color-primary;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+      }
+
+      &.highlighted {
+        background-color: lighten($color-primary, 35%);
+
+        .step__icon {
+          color: $color-primary;
+        }
+      }
+
+      .step__icon {
+        color: map-get($grey-levels, medium-dark);
+        margin-right: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+
+        i {
+          max-height: 100%;
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}

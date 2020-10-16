@@ -1,0 +1,14 @@
+.button {
+  @include shadows(25%);
+
+  padding: 15px 22px;
+  border-radius: 30px;
+  border: none;
+
+  font-weight: medium;
+  font-size: 15px;
+
+  color: white;
+  background: $color-primary;
+  background: $omf-gradient;
+}

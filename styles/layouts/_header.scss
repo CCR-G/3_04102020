@@ -1,0 +1,23 @@
+header {
+  @include shadows(map-get($shadow-percentage, dark));
+
+  position: relative;
+  margin: 0 auto;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    font-family: "Shrikhand", "Roboto", sans-serif;
+    font-size: 1.6em;
+  }
+
+  .previous-page {
+    position: absolute;
+    width: 100%;
+    max-width: $max-width;
+    padding-left: 20px;
+  }
+}

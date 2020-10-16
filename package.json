@@ -1,0 +1,17 @@
+{
+  "name": "oc-project-3",
+  "version": "1.0.0",
+  "description": "Project 3 : \"Dynamisez une page web avec des animations CSS\"",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./styles/main.scss:./styles/style.css"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "sass",
+    "animations"
+  ],
+  "author": "CCR-G",
+  "license": "ISC"
+}
