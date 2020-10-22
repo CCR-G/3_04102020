@@ -10,11 +10,13 @@
 @import "layouts/header";
 @import "layouts/footer";
 
+@import "components/card";
 @import "components/skip-to-content";
 @import "components/article-card";
-@import "components/button";
-@import "components/like-button";
+@import "components/buttons";
 @import "components/new-label";
 @import "components/steps";
+@import "components/menu-item";
 
 @import "pages/home";
+@import "pages/restaurant";

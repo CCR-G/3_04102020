@@ -1,0 +1,17 @@
+.menu-select article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0;
+
+  .card-label {
+    flex-direction: row;
+    align-items: flex-end;
+    flex-grow: 2;
+
+    &__title,
+    &__price {
+      margin-right: 23px;
+    }
+  }
+}

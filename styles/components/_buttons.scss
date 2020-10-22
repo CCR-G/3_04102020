@@ -1,0 +1,50 @@
+.button {
+  @include shadows(25%);
+
+  padding: 15px 22px;
+  border-radius: 30px;
+  border: none;
+
+  font-weight: medium;
+  font-size: 15px;
+
+  color: white;
+  background: $color-primary;
+  background: $omf-gradient;
+}
+
+input.like-button,
+input.select-button {
+  opacity: 0;
+  position: absolute;
+  left: -9999px;
+}
+
+label.like-button,
+label.select-button {
+  cursor: pointer;
+
+  i {
+    font-size: 21px;
+    color: white;
+  }
+}
+
+label.like-button {
+  filter: drop-shadow(0 0 1px black);
+}
+
+label.select-button {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $color-tertiary;
+}

@@ -2,14 +2,6 @@
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.13), 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
-@mixin card-base() {
-  @include shadows(map-get($shadow-percentage, medium));
-  border-radius: 20px;
-  background-color: white;
-
-  margin: 17px 0;
-}
-
 @mixin display() {
   padding: 53px 20px;
 
@@ -21,5 +13,23 @@
   > * {
     max-width: $max-width;
     width: 100%;
+  }
+}
+
+@mixin visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+  &:hover,
+  &:focus {
+    clip: auto;
+    height: auto;
+    overflow: auto;
+    position: absolute;
+    width: auto;
   }
 }
