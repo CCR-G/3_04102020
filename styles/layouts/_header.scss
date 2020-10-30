@@ -1,5 +1,5 @@
 .page-header {
-  @include shadows(map-get($shadow-percentage, dark));
+  @include shadows(map-get($shadow-percentage, dark), false);
 
   position: relative;
   margin: 0 auto;
@@ -29,6 +29,17 @@
       left: 0;
       margin-left: 20px;
 
+      i {
+        transition: all 250ms ease;
+      }
+
+      a:hover,
+      a:focus {
+        i {
+          transform: scale(1.5);
+          opacity: 0.7;
+        }
+      }
     }
   }
 }
