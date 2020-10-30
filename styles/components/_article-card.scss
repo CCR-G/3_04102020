@@ -31,6 +31,11 @@
     .card-label {
       align-items: center;
 
+      &__title,
+      &__price {
+        margin: 15px 11px 16px;
+      }
+
       label {
         margin: 0 24px 0 12px;
       }
