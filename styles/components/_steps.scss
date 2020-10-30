@@ -21,7 +21,7 @@ section.steps {
         content: counter(steps);
         position: absolute;
         --size: 24px;
-        left: -12px;
+        left: calc(var(--size) / (-2));
         line-height: var(--size);
         width: var(--size);
 
