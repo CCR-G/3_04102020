@@ -7,6 +7,26 @@
     flex-direction: column;
     height: 100%;
     position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+
+    .image-container {
+      height: 170px;
+      display: flex;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+
+        transition: transform 250ms ease-in-out;
+      }
+    }
+
+    &:hover img,
+    &:focus img {
+      transform: scale(1.1);
+    }
 
     .card-label {
       align-items: center;
