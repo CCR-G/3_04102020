@@ -32,4 +32,8 @@
 
 section.section--highlighted {
   background-color: map-get($grey-levels, light);
+
+  > * {
+    @include cardAnimation(5, true, "h2", 1.5s);
+  }
 }

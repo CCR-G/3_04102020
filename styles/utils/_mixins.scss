@@ -27,20 +27,36 @@
   }
 }
 
-@mixin visually-hidden {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+@mixin cardAnimation(
+  $iteration: 10,
+  $exception: false,
+  $exceptionSelector: "",
+  $exceptionDuration: 0s
+) {
+  @for $i from 1 through $iteration {
+    &:nth-child(#{$i}) {
+      -webkit-animation: fadein 1s #{$i * 0.2 + 0.3}s both;
+      animation-name: fadein;
+      animation-duration: 1s;
+      animation-delay: #{$i * 0.2 + 1}s;
+      animation-fill-mode: both;
+    }
+    @if ($exception) {
+      &:nth-child(#{$i}):not(#{$exceptionSelector}) {
+        animation-duration: $exceptionDuration;
+      }
+    }
+  }
 
-  &:hover,
-  &:focus {
-    clip: auto;
-    height: auto;
-    overflow: auto;
-    position: absolute;
-    width: auto;
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
   }
 }

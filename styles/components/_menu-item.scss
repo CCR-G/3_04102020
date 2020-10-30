@@ -1,7 +1,6 @@
-.menu-select article {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.menu-select article.card {
+  @include shadows(map-get($shadow-percentage, medium), true);
+
   margin-bottom: 0;
 
   .card-label {
@@ -11,7 +10,12 @@
 
     &__title,
     &__price {
-      margin-right: 23px;
-    }
-  }
+.menu-select > * {
+  @include cardAnimation(
+    $iteration: 16,
+    $exception:  true,
+    $exceptionSelector: "article",
+    $exceptionDuration: 0.5s
+  );
+}
 }

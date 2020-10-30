@@ -1,5 +1,5 @@
-article {
-  overflow: hidden;
+.restaurants-list article.card {
+  @include shadows(map-get($shadow-percentage, medium), true);
 
   a {
     //Container

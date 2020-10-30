@@ -1,6 +1,4 @@
 .card {
-  @include shadows(map-get($shadow-percentage, medium));
-
   border-radius: 20px;
   background-color: white;
   margin: 17px 0;

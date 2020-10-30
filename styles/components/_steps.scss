@@ -1,10 +1,15 @@
 section.steps {
+  *:not(ol) {
+    @include cardAnimation(3);
+  }
+
   ol {
     padding: 0 0 0 12px;
     margin: 0;
     counter-reset: steps;
 
-    li {
+    li.card {
+      @include shadows(map-get($shadow-percentage, medium), false);
       background-color: map-get($grey-levels, light);
       padding: 27px 33px;
       counter-increment: steps;
