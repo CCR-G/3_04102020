@@ -16,6 +16,12 @@ article {
       }
     }
   }
+
+  .like-button {
+    position: absolute;
+    right: 24px;
+    bottom: 31px;
+  }
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
