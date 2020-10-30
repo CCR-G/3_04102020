@@ -9,15 +9,26 @@
   justify-content: center;
   align-items: center;
 
-  .logo {
-    font-family: "Shrikhand", "Roboto", sans-serif;
-    font-size: 1.6em;
-  }
+  a {
+    position: relative;
 
-  .previous-page {
-    position: absolute;
     width: 100%;
-    max-width: $max-width;
-    padding-left: 20px;
+    max-width: 740px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      font-family: "Shrikhand", "Roboto", sans-serif;
+      font-size: 1.6em;
+    }
+
+    .back-to-homepage {
+      position: absolute;
+      left: 0;
+      margin-left: 20px;
+
+    }
   }
 }
