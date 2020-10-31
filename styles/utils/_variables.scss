@@ -8,7 +8,15 @@ $gradient-primary: linear-gradient(
   rgba(255, 121, 218, 1) 100%
 );
 
-$gradient-secondary: linear-gradient(205deg, #9356dc 0%, #ff79da 100%);
+$gradient-secondary: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(255, 255, 255, 1) 25%,
+  rgba(255, 121, 218, 1) 25%,
+  rgba(147, 86, 220, 1) 75%,
+  rgba(147, 86, 220, 1) 85%,
+  rgba(212, 107, 219, 1) 100%
+);
 
 $grey-levels: (
   light: #f6f6f6,

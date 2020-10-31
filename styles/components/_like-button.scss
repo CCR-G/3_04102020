@@ -10,27 +10,41 @@
 
       i {
         font-size: 20px;
-        color: white;
-        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+        background-color: white;
+        background: $gradient-secondary;
+
+        background-position: top;
+        background-size: 400% 400%;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        transition: all 500ms ease 0ms;
       }
     }
 
     + label i:hover {
-      color: $color-secondary;
-      background: none;
-    }
+      background-color: $color-secondary;
+      background-position: 35% 35%;
 
-    &:focus + label i {
-      filter: drop-shadow(0 0 2px $color-secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     &:checked + label i {
-      background: $color-primary;
-      background: $gradient-secondary;
+      background-color: $color-primary;
+      background-position: bottom;
+
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 
       animation: inflate 250ms ease 0s forwards normal;
+    }
+
+    &:focus + label i,
+    &:hover + label i {
+      filter: drop-shadow(0 0 1px gray);
     }
   }
 }
