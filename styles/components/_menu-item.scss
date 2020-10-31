@@ -9,7 +9,7 @@
     align-items: flex-end;
 
     position: relative;
-    height: 100%;
+    height: 82px;
 
     &__title,
     &__price {
@@ -38,7 +38,7 @@ label.select-button {
   justify-content: center;
   flex-shrink: 0;
 
-  height: 100%;
+  height: 82px;
   width: 60px;
 
   background-color: $color-tertiary;
@@ -117,7 +117,7 @@ label.select-button {
   //Effects
   input.select-button:checked + .card-label__title {
     h3 i {
-      transform: scale(100%);
+      transform: scale(1);
       //transform: rotate(360deg);
     }
 
