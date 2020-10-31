@@ -1,6 +1,6 @@
 section.steps {
   *:not(ol) {
-    @include cardAnimation(3);
+    @include cardAnimation(3, $delay: 3);
   }
 
   ol {

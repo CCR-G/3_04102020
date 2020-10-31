@@ -31,14 +31,15 @@
   $iteration: 10,
   $exception: false,
   $exceptionSelector: "",
-  $exceptionDuration: 0s
+  $exceptionDuration: 0s,
+  $delay: 1
 ) {
   @for $i from 1 through $iteration {
     &:nth-child(#{$i}) {
-      -webkit-animation: fadein 1s #{$i * 0.2 + 0.3}s both;
-      animation-name: fadein;
+      -webkit-animation: slidingin #{$delay}s #{$i * 0.2 + 0.3}s both;
+      animation-name: slidingin;
       animation-duration: 1s;
-      animation-delay: #{$i * 0.2 + 1}s;
+      animation-delay: #{$i * 0.2 + $delay}s;
       animation-fill-mode: both;
     }
     @if ($exception) {
