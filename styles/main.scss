@@ -1,6 +1,7 @@
 @import "utils/variables";
 @import "utils/functions";
 @import "utils/mixins";
+@import "utils/keyframes";
 
 @import "vendors/normalize";
 
@@ -18,6 +19,7 @@
 @import "components/new-label";
 @import "components/steps";
 @import "components/menu-item";
+@import "components/location-input";
 
 @import "pages/home";
 @import "pages/restaurant";

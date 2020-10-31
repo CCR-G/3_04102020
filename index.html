@@ -30,12 +30,19 @@
 
     <main id="main-content">
 
-        <p class="location">
-            <span>
+        <form class="location">
+            <span class="map-icon">
                 <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
             </span>
-            Paris, Belleville
-        </p>
+            <button type="submit">
+                <span class="search-icon">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <span class="visually-hidden">Lancer une recherche par lieux</span>
+                </span>
+            </button>
+            <input type="search" name="ville" aria-label="Entrez le nom d'une ville" autocomplete="on"
+                placeholder="Paris, Belleville">
+        </form>
 
         <header class="cover section--highlighted">
             <h1>Réservez le menu qui vous convient</h1>
