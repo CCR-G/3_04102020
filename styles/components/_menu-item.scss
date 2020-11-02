@@ -72,9 +72,8 @@ label.select-button {
 
 // Card fading in
 .menu-select > * {
-  @include cardAnimation(
-    $iteration: 16,
-    $exception:  true,
+  @include slidingInElement(
+    $iterations: 13,
     $exceptionSelector: "article",
     $exceptionDuration: 0.5s
   );

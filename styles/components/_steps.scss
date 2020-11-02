@@ -1,6 +1,6 @@
 section.steps {
   *:not(ol) {
-    @include cardAnimation(3, $delay: 3);
+    @include slidingInElement($iterations: 3, $delay: 3);
   }
 
   ol {

@@ -18,6 +18,6 @@ section.section--highlighted {
   background-color: map-get($grey-levels, light);
 
   > * {
-    @include cardAnimation(5, true, "h2", 1.5s, 3);
+    @include slidingInElement(5, 3, "h2", 1.5s);
   }
 }

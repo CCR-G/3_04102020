@@ -27,14 +27,13 @@
   }
 }
 
-@mixin cardAnimation(
-  $iteration: 10,
-  $exception: false,
+@mixin slidingInElement(
+  $iterations: 10,
+  $delay: 1,
   $exceptionSelector: "",
-  $exceptionDuration: 0s,
-  $delay: 1
+  $exceptionDuration: 0s
 ) {
-  @for $i from 1 through $iteration {
+  @for $i from 1 through $iterations {
     &:nth-child(#{$i}) {
       -webkit-animation: slidingin #{$delay}s #{$i * 0.2 + 0.3}s both;
       animation-name: slidingin;
@@ -42,7 +41,7 @@
       animation-delay: #{$i * 0.2 + $delay}s;
       animation-fill-mode: both;
     }
-    @if ($exception) {
+    @if ($exceptionSelector != "") {
       &:nth-child(#{$i}):not(#{$exceptionSelector}) {
         animation-duration: $exceptionDuration;
       }
