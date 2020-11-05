@@ -49,10 +49,16 @@
   }
 }
 
+// Targeting Internet Explorer
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  label {
-    i {
+  .restaurants-list article.card a {
+    .card-label label i {
       color: map-get($grey-levels, medium-dark);
+    }
+
+    .image-container img {
+      width: inherit;
+      height: 100%;
     }
   }
 }

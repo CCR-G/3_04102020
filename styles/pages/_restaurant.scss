@@ -57,3 +57,11 @@ form.menu-select {
     margin-top: 50px;
   }
 }
+
+// Targeting Internet Explorer
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  header.restaurant-header img {
+    width: inherit;
+    height: 300px;
+  }
+}

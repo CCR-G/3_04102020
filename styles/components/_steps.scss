@@ -20,10 +20,9 @@ section.steps {
       &:before {
         content: counter(steps);
         position: absolute;
-        --size: 24px;
-        left: calc(var(--size) / (-2));
-        line-height: var(--size);
-        width: var(--size);
+        left: -12px;
+        line-height: 24px;
+        width: 24px;
 
         background: $color-primary;
         color: white;

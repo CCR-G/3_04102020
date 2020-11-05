@@ -1,0 +1,23 @@
+.internet-explorer-warning {
+  display: none;
+}
+
+// Targeting Internet Explorer
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .internet-explorer-warning {
+    display: block;
+
+    position: fixed;
+    right: 10px;
+    top: 10px;
+
+    width: 350px;
+    padding: 0 10px;
+
+    text-align: center;
+
+    border: $color-primary 2px solid;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+  }
+}

@@ -154,3 +154,14 @@ label.select-button {
     width: 100%;
   }
   */
+
+// Targeting Internet Explorer
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  input.select-button {
+    opacity: 1;
+    left: inherit;
+    right: 5px;
+    bottom: 20px;
+    z-index: 1;
+  }
+}
