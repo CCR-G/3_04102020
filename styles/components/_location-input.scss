@@ -38,6 +38,8 @@
 }
 
 .location:focus-within {
+  // /!\ Browser performances
+
   .map-icon {
     display: none;
   }

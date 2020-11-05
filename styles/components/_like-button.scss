@@ -17,7 +17,9 @@
         background-position: top;
         background-size: 400% 400%;
 
+        // `background-clip: text` is still experimental
         -webkit-background-clip: text;
+        // `text-fill-color` is a non-standard feature
         -webkit-text-fill-color: transparent;
 
         transition: all 500ms ease 0ms;
