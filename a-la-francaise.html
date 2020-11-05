@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>ohmyfood - La Palette du Goût</title>
+    <title>ohmyfood - À la Française</title>
 
     <base href="index.html" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
@@ -10,7 +10,7 @@
 
     <meta charset="UTF-8" />
     <meta name="title" content="ohmyfood" />
-    <meta name="description" content="La Palette du Goût" />
+    <meta name="description" content="À la Française" />
     <meta name="keywords" content="ohmyfood, restaurant, gastronomie, menu" />
     <meta name="author" content="CCR-G" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,13 +30,12 @@
 
     <main id="main-content">
         <header class="restaurant-header">
-            <img role="img" aria-hidden="true" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="" />
+            <img role="img" aria-hidden="true" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" />
             <div class="title">
                 <h1>La palette du goût</h1>
                 <div class="like-button">
-                    <input id="palette-menilmontant" type="checkbox" value="palette-menilmontant" />
-                    <label for="palette-menilmontant">
+                    <input id="a-la-francaise" type="checkbox" value="a-la-francaise" />
+                    <label for="a-la-francaise">
                         <i role="img" aria-hidden="true" class="fas fa-heart"></i>
                         <span class="visually-hidden">Marquer comme "aimé" ce restaurant</span>
                     </label>
@@ -49,18 +48,19 @@
 
             <article class="card">
                 <div class="card-label">
-                    <input class="select-button" id="fricassee-descargot" type="checkbox" value="fricassee-descargot"
+                    <input class="select-button" id="tartare-de-poulpe" type="checkbox" value="tartare-de-poulpe"
                         name="entrees" />
                     <div class="card-label__title" role="text">
                         <h3>
-                            Fricassée d'escargot
+                            Tartare de poulpe acidulé
                             <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
                         </h3>
-                        <p>Au piment d'Espelette</p>
+                        <p>Aux zestes d'orange
+                        </p>
                     </div>
                     <div class="card-label__right-side">
                         <span class="card-label__price">25€</span>
-                        <label class="select-button" for="fricassee-descargot">
+                        <label class="select-button" for="tartare-de-poulpe">
                             <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
                             <span class="visually-hidden">Sélectionner cette entrée</span>
                         </label>
@@ -70,38 +70,40 @@
 
             <article class="card">
                 <div class="card-label">
-                    <input class="select-button" id="fois-gras" type="checkbox" value="fois-gras" name="entrees" />
-                    <div class="card-label__title" role="text">
-                        <h3>
-                            Foie gras de canard mi-cuit
-                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
-                        </h3>
-                        <p>Et ses copeaux de truffe noire</p>
-                    </div>
-                    <div class="card-label__right-side">
-                        <span class="card-label__price">35€</span>
-                        <label class="select-button" for="fois-gras">
-                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
-                            <span class="visually-hidden">Sélectionner cette entrée</span>
-                        </label>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card">
-                <div class="card-label">
-                    <input class="select-button" id="tartare-de-thon" type="checkbox" value="tartare-de-thon"
+                    <input class="select-button" id="veloute-de-legumes" type="checkbox" value="veloute-de-legumes"
                         name="entrees" />
                     <div class="card-label__title" role="text">
                         <h3>
-                            Tartare de thon
+                            Velouté de légumes d'antan
                             <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
                         </h3>
-                        <p>Assaisonné à la truffe sur lit de caviar</p>
+                        <p>Carotte, panais, topinambour
+                        </p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">35€</span>
+                        <label class="select-button" for="veloute-de-legumes">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            <span class="visually-hidden">Sélectionner cette entrée</span>
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="soupe-a-l-oignon" type="checkbox" value="soupe-a-l-oignon"
+                        name="entrees" />
+                    <div class="card-label__title" role="text">
+                        <h3>
+                            Soupe à l'oignon
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Revisitée</p>
                     </div>
                     <div class="card-label__right-side">
                         <span class="card-label__price">20€</span>
-                        <label class="select-button" for="tartare-de-thon">
+                        <label class="select-button" for="soupe-a-l-oignon">
                             <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
                             <span class="visually-hidden">Sélectionner cette entrée</span>
                         </label>
@@ -113,19 +115,18 @@
 
             <article class="card">
                 <div class="card-label">
-                    <input class="select-button" id="filet-de-boeuf" type="checkbox" value="filet-de-boeuf"
-                        name="plats" />
+                    <input class="select-button" id="coquilles-saint-jacques" type="checkbox"
+                        value="coquilles-saint-jacques" name="plats" />
                     <div class="card-label__title" role="text">
                         <h3>
-                            Filet de boeuf aux herbes
+                            Coquilles Saint-Jacques
                             <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
                         </h3>
-                        <p>Accompagné de sa ribambelle de légumes
-                        </p>
+                        <p>Accompagnées d'une purée de panais</p>
                     </div>
                     <div class="card-label__right-side">
                         <span class="card-label__price">40€</span>
-                        <label class="select-button" for="filet-de-boeuf">
+                        <label class="select-button" for="coquilles-saint-jacques">
                             <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
                             <span class="visually-hidden">Sélectionner ce plat</span>
                         </label>
@@ -135,41 +136,38 @@
 
             <article class="card">
                 <div class="card-label">
-                    <input class="select-button" id="parmentier-de-queue-de-boeuf" type="checkbox"
-                        value="parmentier-de-queue-de-boeuf" name="plats" />
-                    <div class="card-label__title" role="text">
-                        <h3>
-                            Parmentier de queue de boeuf
-                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
-                        </h3>
-                        <p>À la truffe noire sur sa purée de panais
-                        </p>
-                    </div>
-                    <div class="card-label__right-side">
-                        <span class="card-label__price">35€</span>
-                        <label class="select-button" for="parmentier-de-queue-de-boeuf">
-                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
-                            <span class="visually-hidden">Sélectionner ce plat</span>
-                        </label>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card">
-                <div class="card-label">
-                    <input class="select-button" id="filet-de-turbot" type="checkbox" value="filet-de-turbot"
+                    <input class="select-button" id="magret-de-canard" type="checkbox" value="magret-de-canard"
                         name="plats" />
                     <div class="card-label__title" role="text">
                         <h3>
-                            Filet de turbot
+                            Magret de canard
                             <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
                         </h3>
-                        <p>Aux agrumes
-                        </p>
+                        <p>Et parmentier de pommes de terre</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">35€</span>
+                        <label class="select-button" for="magret-de-canard">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            <span class="visually-hidden">Sélectionner ce plat</span>
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="pigeonneau" type="checkbox" value="pigeonneau" name="plats" />
+                    <div class="card-label__title" role="text">
+                        <h3>
+                            Pigeonneau d’Ille-et-Vilaine
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Sur son lit de gnocchis aux légumes</p>
                     </div>
                     <div class="card-label__right-side">
                         <span class="card-label__price">44€</span>
-                        <label class="select-button" for="filet-de-turbot">
+                        <label class="select-button" for="pigeonneau">
                             <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
                             <span class="visually-hidden">Sélectionner ce plat</span>
                         </label>
@@ -181,39 +179,39 @@
 
             <article class="card">
                 <div class="card-label">
-                    <input class="select-button" id="paris-brest" type="checkbox" value="paris-brest" name="desserts" />
+                    <input class="select-button" id="petales-de-violettes-glaces" type="checkbox"
+                        value="petales-de-violettes-glaces" name="desserts" />
                     <div class="card-label__title" role="text">
                         <h3>
-                            Paris-Brest
+                            Pétales de violettes glacés
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Et purée de noisettes</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">18€</span>
+                        <label class="select-button" for="petales-de-violettes-glaces">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            <span class="visually-hidden">Sélectionner ce dessert</span>
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="fondant-au-chocolat" type="checkbox" value="fondant-au-chocolat"
+                        name="desserts" />
+                    <div class="card-label__title" role="text">
+                        <h3>
+                            Fondant au chocolat
                             <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
                         </h3>
                         <p>Revisité</p>
                     </div>
                     <div class="card-label__right-side">
-                        <span class="card-label__price">18€</span>
-                        <label class="select-button" for="paris-brest">
-                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
-                            <span class="visually-hidden">Sélectionner ce dessert</span>
-                        </label>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card">
-                <div class="card-label">
-                    <input class="select-button" id="macaron-au-chocolat" type="checkbox" value="macaron-au-chocolat"
-                        name="desserts" />
-                    <div class="card-label__title" role="text">
-                        <h3>
-                            Macaron au chocolat d'exception
-                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
-                        </h3>
-                        <p>Et glace à la vanille de Madagascar
-                        </p>
-                    </div>
-                    <div class="card-label__right-side">
                         <span class="card-label__price">22€</span>
-                        <label class="select-button" for="macaron-au-chocolat">
+                        <label class="select-button" for="fondant-au-chocolat">
                             <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
                             <span class="visually-hidden">Sélectionner ce dessert</span>
                         </label>
@@ -223,19 +221,18 @@
 
             <article class="card">
                 <div class="card-label">
-                    <input class="select-button" id="mousse-au-chocolat" type="checkbox" value="mousse-au-chocolat"
-                        name="desserts" />
+                    <input class="select-button" id="millefeuille-croustillant" type="checkbox"
+                        value="millefeuille-croustillant" name="desserts" />
                     <div class="card-label__title" role="text">
                         <h3>
-                            Mousse au chocolat
+                            Millefeuille croustillant
                             <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
                         </h3>
-                        <p>Au piment d'Espelette et à la truffe noire
-                        </p>
+                        <p>Myrtilles et pâte d’amande</p>
                     </div>
                     <div class="card-label__right-side">
                         <span class="card-label__price">23€</span>
-                        <label class="select-button" for="mousse-au-chocolat">
+                        <label class="select-button" for="millefeuille-croustillant">
                             <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
                             <span class="visually-hidden">Sélectionner ce dessert</span>
                         </label>
