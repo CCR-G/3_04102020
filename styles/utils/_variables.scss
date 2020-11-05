@@ -4,11 +4,17 @@ $color-tertiary: #99e2d0;
 
 $gradient-primary: linear-gradient(
   353deg,
-  rgba(147, 86, 220, 1) 0%,
-  rgba(255, 121, 218, 1) 100%
+  $color-primary 0%,
+  $color-secondary 100%
 );
 
 $gradient-secondary: linear-gradient(
+  353deg,
+  $color-secondary 0%,
+  lighten($color-secondary, 6%) 100%
+);
+
+$gradient-tertiary: linear-gradient(
   180deg,
   rgba(255, 255, 255, 1) 0%,
   rgba(255, 255, 255, 1) 25%,

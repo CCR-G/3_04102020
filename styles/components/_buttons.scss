@@ -12,18 +12,31 @@
 
   color: white;
 
-  transition: all 600ms ease;
-
   background: $color-primary;
   background: $gradient-primary;
 
-  background-size: 100% 100%;
-  background-position: 50% 50%;
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
 
-  &:hover,
-  &:focus {
-    background-position: 0% 0%;
-    background-size: 400% 400%;
+  &::after {
+    content: "";
+
+    opacity: 0;
+    transition: opacity 600ms ease;
+
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    border-radius: 30px;
+
+    background: $color-secondary;
+    background: $gradient-secondary;
   }
 
   &:visited {
