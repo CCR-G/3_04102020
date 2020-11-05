@@ -35,7 +35,6 @@
 ) {
   @for $i from 1 through $iterations {
     &:nth-child(#{$i}) {
-      -webkit-animation: slidingin #{$delay}s #{$i * 0.2 + 0.3}s both;
       animation-name: slidingin;
       animation-duration: 1s;
       animation-delay: #{$i * 0.2 + $delay}s;
