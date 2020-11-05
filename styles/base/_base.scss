@@ -29,6 +29,10 @@ main {
   margin: 0 auto;
 }
 
+::selection {
+  background-color: $color-secondary;
+}
+
 section {
   @include display;
 }
