@@ -11,17 +11,19 @@
 @import "layouts/header";
 @import "layouts/footer";
 
-@import "components/loader";
-@import "components/card";
-@import "components/skip-to-content";
-@import "components/article-card";
-@import "components/like-button";
-@import "components/buttons";
-@import "components/new-label";
-@import "components/steps";
-@import "components/menu-item";
-@import "components/location-input";
+@import "components/cards/card";
+@import "components/cards/article-card";
+@import "components/cards/steps";
+@import "components/cards/menu-item";
+
+@import "components/interactive-elements/like-button";
+@import "components/interactive-elements/buttons";
+@import "components/interactive-elements/location-input";
+
 @import "components/internet-explorer-warning";
+@import "components/loader";
+@import "components/new-label";
+@import "components/skip-to-content";
 
 @import "pages/home";
 @import "pages/restaurant";
