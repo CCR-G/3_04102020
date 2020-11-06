@@ -1,5 +1,5 @@
 .restaurants-list article.card {
-  @include shadows(true);
+  @include shadows();
 
   a {
     //Container

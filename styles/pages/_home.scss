@@ -18,6 +18,11 @@ section.section--highlighted {
   background-color: map-get($grey-levels, light);
 
   > * {
-    @include slidingInElement(5, 3, "h2", 1.5s);
+    @include slidingInElement(
+      $iterations: 5,
+      $delay: 3,
+      $exceptionSelector: "h2",
+      $exceptionDuration: 1.5s
+    );
   }
 }
