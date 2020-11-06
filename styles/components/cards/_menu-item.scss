@@ -4,6 +4,10 @@
   margin-bottom: 0;
   overflow: hidden;
 
+  &:focus-within {
+    outline: 1px dotted black;
+  }
+
   .card-label {
     flex-direction: row;
     align-items: flex-end;
@@ -91,6 +95,7 @@ label.select-button {
 
   //Effect
   &:hover .card-label__right-side {
+    // When we start using JavaScript, we can display `.card-label__right-side` on keyboard navigating only focus.
     transform: translate(0px);
 
     label i {
