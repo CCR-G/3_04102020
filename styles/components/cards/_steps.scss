@@ -9,7 +9,7 @@ section.steps {
     counter-reset: steps;
 
     li.card {
-      @include shadows(map-get($shadow-percentage, medium), false);
+      @include shadows(false);
       background-color: map-get($grey-levels, light);
       padding: 27px 33px;
       counter-increment: steps;

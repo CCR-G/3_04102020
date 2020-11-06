@@ -1,5 +1,5 @@
 .restaurants-list article.card {
-  @include shadows(map-get($shadow-percentage, medium), true);
+  @include shadows(true);
 
   a {
     //Container

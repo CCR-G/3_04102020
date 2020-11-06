@@ -1,5 +1,5 @@
 .page-header {
-  @include shadows(map-get($shadow-percentage, dark), false);
+  @include shadows(false);
 
   position: relative;
   margin: 0 auto;

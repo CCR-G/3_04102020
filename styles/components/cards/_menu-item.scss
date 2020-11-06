@@ -1,5 +1,5 @@
 .menu-select article.card {
-  @include shadows(map-get($shadow-percentage, medium), true);
+  @include shadows(true);
 
   margin-bottom: 0;
   overflow: hidden;
