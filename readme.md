@@ -18,7 +18,7 @@ _I also made the page accessible and usable using a keyboard or screen reader._
 
 ## Link to the GitHub page
 
-https://ccr-g.github.io/3_04102020/
+https://ccr-g.github.io/OC_3-Integrate_a_mobile_website_with_animations_in_CSS/
 
 ## Comments and feedback
 
